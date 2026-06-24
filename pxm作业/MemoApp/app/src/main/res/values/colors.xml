@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 红色主题配色 -->
+    <color name="colorPrimary">#E53935</color>
+    <color name="colorPrimaryDark">#C62828</color>
+    <color name="colorAccent">#FF5252</color>
+
+    <!-- 文字颜色 -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="textHint">#BDBDBD</color>
+
+    <!-- 背景色 -->
+    <color name="background">#F5F5F5</color>
+    <color name="white">#FFFFFF</color>
+</resources>

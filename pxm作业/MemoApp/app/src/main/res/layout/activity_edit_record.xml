@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- 红色标题栏 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:titleTextColor="#FFFFFF"
+        android:title="修改记录" />
+
+    <!-- 表单区域 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 标题 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="事件标题">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 日期 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="日期（如 2024-01-01）">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 时间 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="时间（如 14:30）">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 内容 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="事件详情">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="4"
+                    android:gravity="top" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- 按钮区域 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="取消"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="保存修改"
+                    android:backgroundTint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
